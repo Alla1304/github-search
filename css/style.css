@@ -38,9 +38,18 @@ form {
     
 }
 
+@media (max-width: 570px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .form-input {
     display: inline-block;
     position: relative;
+    margin-bottom: 20px;
 }
 
 input {
@@ -58,6 +67,12 @@ input:focus {
     outline: none;
     box-shadow: 1px 1px 15px rgb(19%, 19%, 19%, 0.5);
 }
+
+@media (max-width: 460px) {
+    input {
+        width: 100%;
+    }
+} 
 
 button {
     border-radius: 15px;
@@ -77,6 +92,7 @@ button {
 button:hover {
     box-shadow: 1px 1px 10px rgb(19%, 19%, 19%, 0.5);
 }
+
 
 .error {
     position: absolute;
